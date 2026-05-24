@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-[1400px] mx-auto px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1">
-            <img src={logo} alt="BeauTech" style={{ height: '32px', marginBottom: '24px', filter: 'brightness(0) invert(1)' }} />
+            <img src={logo} alt="BeauTech" style={{ height: '32px', width: 'auto', marginBottom: '24px', filter: 'brightness(0) invert(1)' }} />
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               The premier salon and spa management software built exclusively for Sri Lanka. Empowering beauty professionals across the island.
             </p>

@@ -45,9 +45,9 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
           {/* Logo */}
           <button
             onClick={() => onNavigate('home')}
-            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
+            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0, flexShrink: 0, display: 'flex', alignItems: 'center' }}
           >
-            <img src={logo} alt="BeauTech" style={{ height: '30px' }} />
+            <img src={logo} alt="BeauTech" style={{ height: '32px', width: 'auto' }} />
           </button>
 
           <div className="flex items-center gap-8">

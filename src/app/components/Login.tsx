@@ -36,7 +36,7 @@ export default function Login({ onNavigate }: LoginProps) {
       <div className="w-full max-w-[480px]">
         {/* Logo */}
         <div className="text-center mb-12">
-          <img src={logo} alt="BeauTech" className="mx-auto" style={{ height: '36px', marginBottom: '24px' }} />
+          <img src={logo} alt="BeauTech" className="mx-auto" style={{ height: '36px', width: 'auto', marginBottom: '24px' }} />
           <h1
             style={{
               fontSize: '32px',

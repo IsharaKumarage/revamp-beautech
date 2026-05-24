@@ -1,6 +1,7 @@
 import { Star, Quote } from 'lucide-react';
 import { motion } from 'motion/react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import testimonialImg from '../../imports/testimonial image.png';
 
 const smallTestimonials = [
   {
@@ -137,7 +138,7 @@ export default function Testimonials() {
           {/* Right — photo */}
           <div className="relative overflow-hidden" style={{ minHeight: '440px' }}>
             <ImageWithFallback
-              src="/images/testimonial_salon_owner.png"
+              src={testimonialImg}
               alt="Quintessential Beauty Lounge — BeauTech customer"
               className="w-full h-full object-cover object-center"
               style={{ position: 'absolute', inset: 0 }}

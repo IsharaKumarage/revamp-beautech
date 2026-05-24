@@ -1,5 +1,6 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Play } from 'lucide-react';
+import heroImage from '../../imports/hero image.png';
 
 export default function Hero() {
   return (
@@ -103,7 +104,7 @@ export default function Hero() {
           }}
         >
           <ImageWithFallback
-            src="/images/hero_laptop_woman.png"
+            src={heroImage}
             alt="BeauTech Calendar Dashboard"
             className="w-full h-auto object-cover object-top"
             style={{ maxHeight: '520px' }}
