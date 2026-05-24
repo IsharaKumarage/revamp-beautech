@@ -1,0 +1,28 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+@layer components {
+  .figma-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* Margin 120px on desktop */
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  
+  @media (min-width: 1024px) {
+    .figma-container {
+      /* Gutter 24px implies we need 24px gap between columns if using grid, but for container margin we use 120px */
+      padding-left: 120px;
+      padding-right: 120px;
+    }
+  }
+
+  .figma-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
