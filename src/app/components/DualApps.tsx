@@ -92,12 +92,11 @@ export default function DualApps() {
             </div>
           </div>
           
-          <div className="absolute right-0 top-0 bottom-0 w-[45%] h-full rounded-r-[32px] overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent z-10 w-24"></div>
+          <div className="absolute right-6 top-6 bottom-6 w-[45%] rounded-[24px] overflow-hidden">
             <img 
-              src="/src/imports/salons.jpg" 
+              src="/src/imports/IMG2.png" 
               alt="Salon Professional" 
-              className="w-full h-full object-cover object-center grayscale opacity-90"
+              className="w-full h-full object-cover object-center"
             />
           </div>
         </div>
