@@ -98,11 +98,11 @@ const articles = [
 ];
 
 const categoryColors: Record<string, { bg: string; color: string }> = {
-  'New Feature': { bg: '#E8F5E9', color: '#2E7D32' },
-  'Customers': { bg: '#FFF3E0', color: '#E65100' },
-  'Tips & Tricks': { bg: '#E3F2FD', color: '#1565C0' },
-  'Business Types': { bg: '#F3E5F5', color: '#6A1B9A' },
-  'Updates': { bg: '#FCEEF3', color: '#B54D71' },
+  'New Feature': { bg: '#F8EFEF', color: '#9E8080' },
+  'Customers': { bg: '#F8EFEF', color: '#9E8080' },
+  'Tips & Tricks': { bg: '#F8EFEF', color: '#9E8080' },
+  'Business Types': { bg: '#F8EFEF', color: '#9E8080' },
+  'Updates': { bg: '#F8EFEF', color: '#9E8080' },
 };
 
 function CategoryBadge({ category }: { category: string }) {
@@ -149,7 +149,7 @@ export default function Blog() {
               marginBottom: '12px'
             }}
           >
-            Latest news from BeauTech
+            Latest news from Beautech
           </h1>
           <p style={{ fontSize: '17px', color: '#1A1A2E', opacity: 0.65, marginBottom: '32px' }}>
             Stories, tips, and updates for beauty businesses in Sri Lanka.

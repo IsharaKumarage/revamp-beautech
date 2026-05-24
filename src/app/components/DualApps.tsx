@@ -102,28 +102,27 @@ export default function DualApps() {
 
           {/* Business app for professionals */}
           <div
-            className="bg-white p-12 transition-all duration-300 hover:shadow-xl"
+            className="bg-white p-12 pb-12 transition-all duration-300 hover:shadow-xl relative overflow-hidden"
             style={{
               borderRadius: '32px',
               border: '1px solid rgba(26,26,46,0.06)'
             }}
           >
-            {/* Icon with gradient */}
+            <div className="relative z-10 max-w-[60%]">
+            {/* Icon with solid color */}
             <div
-              className="inline-flex items-center justify-center mb-8"
+              className="inline-flex items-center justify-center mb-6"
               style={{
-                width: '88px',
-                height: '88px',
-                borderRadius: '24px',
-                background: 'linear-gradient(135deg, #4A5FBF 0%, #1A1A2E 100%)',
-                boxShadow: '0 8px 24px rgba(26,26,46,0.25)'
+                width: '64px',
+                height: '64px',
+                borderRadius: '16px',
+                backgroundColor: '#B89292',
+                boxShadow: '0 4px 12px rgba(184,146,146,0.25)'
               }}
             >
-              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
                 <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-                <line x1="12" y1="11" x2="12" y2="11.01"/>
-                <line x1="12" y1="15" x2="12" y2="15.01"/>
               </svg>
             </div>
 
@@ -188,6 +187,16 @@ export default function DualApps() {
                   <div style={{ fontSize: '16px', fontWeight: 600, color: 'white', lineHeight: 1 }}>Google Play</div>
                 </div>
               </a>
+            </div>
+            </div>
+            
+            <div className="absolute right-0 top-0 bottom-0 w-[45%] h-full rounded-r-[32px] overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent z-10 w-24"></div>
+              <img 
+                src="/src/imports/salons.jpg" 
+                alt="Salon Professional" 
+                className="w-full h-full object-cover object-center grayscale opacity-90"
+              />
             </div>
           </div>
 

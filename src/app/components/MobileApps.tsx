@@ -84,17 +84,22 @@ export default function MobileApps() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="bg-[#F9F9F9] rounded-[32px] p-12 pb-0 flex flex-col relative overflow-hidden"
+            className="bg-white rounded-[32px] p-12 pb-0 flex flex-col relative overflow-hidden"
           >
             <div className="mb-8 relative z-10">
-              <div className="w-16 h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-8">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#7C4DFF] to-[#1A1A2E] blur-[8px] opacity-80"></div>
-                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#7C4DFF] to-[#1A1A2E] absolute"></div>
+              <div 
+                className="w-16 h-16 rounded-[16px] shadow-sm flex items-center justify-center mb-6"
+                style={{ backgroundColor: '#B89292' }}
+              >
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
               </div>
-              <h3 style={{ fontSize: '40px', fontWeight: 700, color: '#1A1A2E', lineHeight: 1.1, marginBottom: '16px', maxWidth: '320px' }}>
+              <h3 style={{ fontSize: '36px', fontWeight: 700, color: '#1A1A2E', lineHeight: 1.15, marginBottom: '16px', maxWidth: '320px', letterSpacing: '-0.02em' }}>
                 Business app for professionals
               </h3>
-              <p style={{ fontSize: '18px', color: '#1A1A2E', opacity: 0.8, marginBottom: '32px', maxWidth: '340px' }}>
+              <p style={{ fontSize: '17px', color: '#6B6B8A', marginBottom: '32px', maxWidth: '300px', lineHeight: 1.5 }}>
                 Simple, flexible and powerful software to run your business on the go
               </p>
               
@@ -116,35 +121,13 @@ export default function MobileApps() {
               </div>
             </div>
 
-            <div className="mt-auto ml-auto mr-0 w-[300px] h-[320px] bg-white rounded-tl-[16px] shadow-[-10px_0_30px_rgba(0,0,0,0.05)] border border-gray-100 relative overflow-hidden z-0 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 flex flex-col">
-              <div className="p-4 border-b border-gray-100 flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <div className="h-4 w-4 rounded bg-gray-200"></div>
-                  <div className="h-4 w-24 bg-gray-100 rounded"></div>
-                </div>
-                <div className="w-6 h-6 rounded-full bg-[#C8A2A2] text-white flex items-center justify-center text-[10px] font-bold">M</div>
-              </div>
-              <div className="flex-grow flex">
-                <div className="w-12 border-r border-gray-100 p-2 flex flex-col gap-4 items-center pt-8">
-                  <div className="h-3 w-8 bg-gray-100 rounded"></div>
-                  <div className="h-3 w-8 bg-gray-100 rounded"></div>
-                  <div className="h-3 w-8 bg-gray-100 rounded"></div>
-                </div>
-                <div className="flex-grow relative p-2">
-                  <div className="absolute top-4 left-2 w-32 h-16 bg-[#E8F8F3] rounded-md border border-[#1D9E75]/20 p-2">
-                    <div className="h-2 w-16 bg-[#1D9E75]/40 rounded mb-1"></div>
-                    <div className="h-2 w-12 bg-[#1D9E75]/30 rounded"></div>
-                  </div>
-                  <div className="absolute top-24 left-1/2 w-28 h-20 bg-[#FCEEF3] rounded-md border border-[#C8A2A2]/20 p-2">
-                    <div className="h-2 w-14 bg-[#C8A2A2]/40 rounded mb-1"></div>
-                    <div className="h-2 w-10 bg-[#C8A2A2]/30 rounded"></div>
-                  </div>
-                  <div className="absolute top-8 right-2 w-24 h-24 bg-[#Eef8ff] rounded-md border border-blue-200 p-2">
-                    <div className="h-2 w-12 bg-blue-300 rounded mb-1"></div>
-                    <div className="h-2 w-8 bg-blue-200 rounded"></div>
-                  </div>
-                </div>
-              </div>
+            <div className="absolute right-0 top-0 bottom-0 w-[55%] h-full">
+              <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent z-10 w-24"></div>
+              <img 
+                src="/src/imports/salons.jpg" 
+                alt="Salon Professional" 
+                className="w-full h-full object-cover object-center grayscale opacity-90"
+              />
             </div>
           </motion.div>
         </div>
