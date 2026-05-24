@@ -1,6 +1,5 @@
 import { Check, Smartphone } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import image17 from '../../imports/image-17.png';
 
 export default function AllInOneAd() {
   const features = [
@@ -11,13 +10,6 @@ export default function AllInOneAd() {
 
   return (
     <section className="px-8 py-20 bg-white relative overflow-hidden">
-      {/* Decorative "with" text from image-17 */}
-      <div
-        className="absolute right-[-40px] top-1/2 opacity-5 pointer-events-none select-none"
-        style={{ transform: 'translateY(-50%) rotate(90deg)', fontSize: '180px', fontWeight: 900 }}
-      >
-        <ImageWithFallback src={image17} alt="" className="h-32 w-auto" />
-      </div>
       <div className="max-w-[1280px] mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left — Content */}
