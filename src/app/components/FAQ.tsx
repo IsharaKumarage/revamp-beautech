@@ -95,10 +95,10 @@ export default function FAQ() {
           ))}
         </div>
         
-        <div className="mt-12 text-center p-8 bg-[#F8F9FA] rounded-[24px]">
+        <div className="mt-12 text-center p-12 bg-[#F8F9FA] rounded-[24px]">
           <h3 className="text-xl font-medium text-[#1A1A2E] mb-2">Still have questions?</h3>
           <p className="text-[#6B6B8A] mb-6">Our support team is ready to help you out.</p>
-          <button className="px-6 py-3 bg-[#D96B8F] border border-transparent rounded-full text-white font-medium shadow-sm hover:opacity-90 transition-all">
+          <button className="px-6 py-3 bg-[#B89292] border border-transparent rounded-full text-white font-medium shadow-sm hover:opacity-90 transition-all">
             Contact Support
           </button>
         </div>

@@ -3,7 +3,7 @@ import logo from '../../imports/Beautech_Logo-01.svg';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1A1A2E] pt-16 pb-8">
+    <footer className="bg-[#2C2C2C] pt-16 pb-8">
       <div className="max-w-[1400px] mx-auto px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1">
@@ -58,18 +58,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} BeauTech Sri Lanka. All rights reserved.
+        <div className="border-t border-[#3A3A3A] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-[#888888] text-xs font-light">
+            All rights Reserved © {new Date().getFullYear()} Beautech Sri Lanka.
           </p>
-          <div className="flex gap-6">
-            <span className="text-gray-400 text-sm flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-green-500"></span> Systems Operational
-            </span>
-            <span className="text-gray-400 text-sm border-l border-gray-800 pl-6">
-              Prices in LKR
-            </span>
-          </div>
+          <p className="text-[#888888] text-xs font-light">
+            Powered by Echirya IT Pvt Ltd.
+          </p>
         </div>
       </div>
     </footer>

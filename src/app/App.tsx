@@ -60,10 +60,10 @@ export default function App() {
           <CustomerSuccess />
           {/* 12. FAQ */}
           <FAQ />
-          {/* 13. Mobile apps — customer + business app download */}
-          <DualApps />
-          {/* 14. Final CTA */}
+          {/* 13. Final CTA */}
           <CTABanner />
+          {/* 14. Mobile apps — business app download */}
+          <DualApps />
         </>
       )}
 
