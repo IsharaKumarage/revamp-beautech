@@ -30,55 +30,30 @@ const benefits = [
 
 export default function MarketplaceGrowth() {
   return (
-    <section className="px-8 py-24 bg-[#1A1A2E] relative overflow-hidden">
-      {/* Decorative blobs */}
-      <div
-        className="absolute top-0 right-0 w-96 h-96 rounded-full opacity-10 blur-3xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, #C8A2A2 0%, transparent 70%)' }}
-      />
-      <div
-        className="absolute bottom-0 left-0 w-80 h-80 rounded-full opacity-8 blur-3xl pointer-events-none"
-        style={{ background: 'radial-gradient(circle, #C8A2A2 0%, transparent 70%)' }}
-      />
-
-      <div className="max-w-[1280px] mx-auto relative z-10">
-        {/* Header */}
-        <div className="grid lg:grid-cols-2 gap-16 items-end mb-16">
+    <section className="bg-[#0B0F19] text-white py-20 lg:py-24 px-6 md:px-12 lg:px-24">
+      <div className="max-w-7xl mx-auto">
+        {/* Header Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start lg:items-end">
           <div>
-            <div
-              className="inline-block px-5 py-2.5 mb-6"
-              style={{
-                backgroundColor: 'rgba(200,162,162,0.15)',
-                color: '#C8A2A2',
-                borderRadius: '50px',
-                fontSize: '14px',
-                fontWeight: 500,
-                border: '1px solid rgba(200,162,162,0.2)',
-              }}
-            >
+            {/* Pill Badge */}
+            <span className="inline-block px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-[#EAA692] border border-[#EAA692]/30 rounded-full mb-6">
               Marketplace & Growth
-            </div>
-            <h2
-              style={{
-                fontSize: 'clamp(32px, 4.5vw, 56px)',
-                fontWeight: 700,
-                color: '#FFFFFF',
-                letterSpacing: '-0.03em',
-                lineHeight: 1.1,
-              }}
-            >
-              Reach millions of new clients
+            </span>
+            {/* Heading */}
+            <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
+              Reach Hundreds <br className="hidden md:inline" /> of new clients
             </h2>
           </div>
           <div>
-            <p style={{ fontSize: '18px', color: 'rgba(255,255,255,0.65)', lineHeight: 1.75 }}>
-              BeauTech puts your business in front of clients actively searching for beauty services — online and in the BeauTech marketplace. More visibility means more bookings, automatically.
+            {/* Description Text */}
+            <p className="text-[#C5C8D4] text-base lg:text-lg leading-relaxed font-normal max-w-xl">
+              Beautech puts your business in front of clients actively searching for beauty services — online and in the BeauTech marketplace. More visibility means more bookings, automatically.
             </p>
           </div>
         </div>
 
-        {/* Benefit cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
           {benefits.map((b, i) => (
             <motion.div
               key={i}
@@ -86,83 +61,26 @@ export default function MarketplaceGrowth() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="p-8 group hover:-translate-y-1 transition-all duration-300"
-              style={{
-                backgroundColor: 'rgba(255,255,255,0.06)',
-                borderRadius: '20px',
-                border: '1px solid rgba(255,255,255,0.08)',
-              }}
+              className="p-6 lg:p-8 flex flex-col gap-6 bg-[#161C2E]/50 border border-[#FFFFFF]/5 rounded-3xl group hover:-translate-y-1 transition-all duration-300"
             >
-              <div
-                className="mb-5 flex items-center justify-center"
-                style={{
-                  width: '52px',
-                  height: '52px',
-                  borderRadius: '14px',
-                  backgroundColor: 'rgba(200,162,162,0.15)',
-                }}
-              >
-                <b.icon size={24} style={{ color: '#C8A2A2' }} />
+              <div className="p-3 w-fit rounded-xl bg-white/[0.03] text-[#EAA692]">
+                <b.icon size={24} />
               </div>
-              <h3
-                style={{
-                  fontSize: '18px',
-                  fontWeight: 600,
-                  color: '#FFFFFF',
-                  marginBottom: '10px',
-                  lineHeight: 1.3,
-                }}
-              >
-                {b.title}
-              </h3>
-              <p style={{ fontSize: '14px', color: 'rgba(255,255,255,0.55)', lineHeight: 1.7 }}>
-                {b.description}
-              </p>
+              <div>
+                <h3 className="text-lg lg:text-xl font-semibold text-white mb-3">
+                  {b.title}
+                </h3>
+                <p className="text-[#A1A5B7] text-sm lg:text-[15px] font-normal leading-relaxed">
+                  {b.description}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>
 
-        {/* Bottom CTA row */}
-        <div className="flex flex-col sm:flex-row items-center justify-between mt-14 pt-10 gap-6"
-          style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}
-        >
-          <p style={{ fontSize: '17px', color: 'rgba(255,255,255,0.6)' }}>
-            Over <strong style={{ color: '#FFFFFF' }}>500 Sri Lankan businesses</strong> already growing with BeauTech
-          </p>
-          <div className="flex gap-3">
-            <button
-              className="transition-all duration-200 hover:opacity-90"
-              style={{
-                backgroundColor: '#C8A2A2',
-                color: 'white',
-                border: 'none',
-                borderRadius: '30px',
-                fontSize: '15px',
-                fontWeight: 600,
-                padding: '13px 28px',
-                cursor: 'pointer',
-                whiteSpace: 'nowrap',
-              }}
-            >
-              Get started now
-            </button>
-            <button
-              className="transition-all duration-200 hover:bg-white/10"
-              style={{
-                backgroundColor: 'transparent',
-                color: 'rgba(255,255,255,0.75)',
-                border: '1px solid rgba(255,255,255,0.2)',
-                borderRadius: '30px',
-                fontSize: '15px',
-                fontWeight: 500,
-                padding: '13px 28px',
-                cursor: 'pointer',
-                whiteSpace: 'nowrap',
-              }}
-            >
-              Book a demo
-            </button>
-          </div>
+        {/* Section Footer */}
+        <div className="text-center mt-16 text-sm lg:text-base text-slate-400 font-normal">
+          Over <span className="font-semibold text-white">500 Sri Lankan businesses</span> already growing with BeauTech
         </div>
       </div>
     </section>
