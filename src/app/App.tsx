@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Navigation from './components/Navigation';
+import BeautechLanding from './BeautechLanding';
 import Hero from './components/Hero';
 import StatsStrip from './components/StatsStrip';
 import TrustedSalons from './components/TrustedSalons';
@@ -71,8 +72,10 @@ export default function App() {
 
       {currentPage === 'login' && <Login onNavigate={handleNavigate} />}
 
+      {currentPage === 'beautech' && <BeautechLanding />}
+
       {/* Placeholder pages */}
-      {!['home', 'blog', 'login'].includes(currentPage) && (
+      {!['home', 'blog', 'login', 'beautech'].includes(currentPage) && (
         <div className="min-h-[60vh] flex flex-col items-center justify-center px-8">
           <div
             style={{
